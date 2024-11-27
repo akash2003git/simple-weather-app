@@ -104,7 +104,7 @@ inputForm.addEventListener("submit", async (e) => {
           <div class="col">
             <img src="images/wind_sym.png" />
             <div>
-              <p id="wind">${weatherObj.wind}</p>
+              <p id="wind">${weatherObj.wind}km/h</p>
               <p>Wind Speed</p>
             </div>
           </div>
