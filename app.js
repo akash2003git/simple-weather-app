@@ -54,7 +54,7 @@ const getCords = async () => {
   try {
     const config = {
       params: {
-        name: searchInput.value,
+        name: searchInput.value.trim(),
         format: "json",
         count: "1",
         language: "en",
