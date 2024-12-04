@@ -44,7 +44,7 @@ const getWeather = async (place) => {
       // console.log("Current hour:", currentHour);
       return { loc, temp, wind, humidity, weatherCode };
     } catch (e) {
-      console.log("Error fetching weather for give coordinates: ", e);
+      console.log("Error fetching weather for given coordinates: ", e);
       return null;
     }
   }
@@ -69,7 +69,7 @@ const getCords = async () => {
     const lon = res.data.results[0].longitude;
     return { loc, lat, lon };
   } catch (e) {
-    console.log("Error fetch coordinates: ", e);
+    console.log("Error fetching coordinates: ", e);
     return null;
   }
 };
